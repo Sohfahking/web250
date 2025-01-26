@@ -1,0 +1,124 @@
+/* Palette */
+:root {
+    /* CSS HEX */
+    --paynes-gray: #5d737eff;
+    --verdigris: #64b6acff;
+    --celeste: #c0fdfbff;
+    --mint-green: #daffefff;
+    --baby-powder: #fcfffdff;
+    
+    /* CSS HSL */
+    --paynes-gray-hsl: hsla(200, 15%, 43%, 1);
+    --verdigris-hsl: hsla(173, 36%, 55%, 1);
+    --celeste-hsl: hsla(178, 94%, 87%, 1);
+    --mint-green-hsl: hsla(154, 100%, 93%, 1);
+    --baby-powder-hsl: hsla(140, 100%, 99%, 1);
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: "Georgia", serif;
+    color: var(--paynes-gray);
+    background-color: var(--baby-powder);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  p, ul, li {
+    text-align: left;
+    margin: 0 1rem;
+  }
+  
+  /* Navigation Bar */
+  header nav {
+    background-color: var(--verdigris);
+    padding: 1rem 0;
+  }
+  
+  header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header nav ul li {
+    margin: 0 1rem;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: var(--baby-powder);
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  header nav ul li a:hover {
+    color: var(--celeste);
+  }
+  
+  /* Main Content */
+  main {
+    padding: 2rem;
+    background-color: var(--mint-green);
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  main h2 {
+    color: var(--verdigris);
+  }
+  
+  main p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: var(--paynes-gray);
+  }
+  
+
+  /* Footer */
+  footer {
+    background-color: var(--paynes-gray);
+    color: var(--baby-powder);
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-flex; /* Align items in a horizontal row */
+    gap: 1rem; /* Add spacing between items */
+  }
+  
+  footer ul li {
+    display: inline;
+  }
+  
+  footer ul li a {
+    text-decoration: none;
+    color: var(--mint-green);
+    transition: color 0.3s ease;
+  }
+  
+  footer ul li a:hover {
+    color: var(--celeste);
+  }
+  
+ /* Footer Paragraph */
+ footer p {
+    margin-top: 16px;
+    font-size: 14px;
+    text-align: center; /* Ensures the paragraph text is centered */
+    line-height: 20px; /* Improves readability */
+  }
