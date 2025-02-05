@@ -21,10 +21,16 @@
     color: var(--paynes-gray);
     background-color: var(--baby-powder);
     margin: 0;
-    padding: 0;
-    line-height: 1.6;
+    padding: 20px;
+    line-height: 1.5;
   }
   
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center; /* Center the heading */
+    margin: 0;
+    padding: 20px;
+  }
   h1, h2, h3, h4, h5, h6 {
     text-align: center;
     font-weight: bold;

@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <!-- Metadata -->
   <meta charset="UTF-8">
-  <meta name="description" content="Index/Home">
+  <meta name="description" content="Brand">
   <meta name="keywords" content="HTML, CSS, JavaScript">
   <meta name="author" content="Dajabre Torain">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,15 +11,37 @@
   <!-- Acumulus Validator -->
   <script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
 
-  <!-- Coolors Palette Widget -->
-  <script src="https://coolors.co/palette-widget/widget.js"></script>
-  <script data-id="05657275510916041">new CoolorsPaletteWidget("05657275510916041", ["5d737e","64b6ac","c0fdfb","daffef","fcfffd"]); </script>
-
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="styles/palette250.css">
   <link rel="stylesheet" href="styles/brand.css">
+  
+  <!-- Color Palette Style -->
+  <style>
+    #palette-container {
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      flex-wrap: wrap; /* Allow wrapping to next line */
+      gap: 20px; /* Space between blocks */
+    }
 
-    <title>Dajabre Torain's Daring Tiger | WEB115 | Home</title>
+    .color-block {
+      font-family: Calibri, sans-serif;
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      font-size: 14px;
+      color: black;
+      margin: 10px;
+      border: 2px solid lightslategray;
+      display: flex; /* Align content within the block */
+      flex-direction: column;
+      justify-content: center; /* Center text vertically */
+      align-items: center; /* Center text horizontally */
+    }
+  </style>
+  
+  <title>Dajabre Torain's Daring Tiger | WEB250 | Brand</title>
 </head>
 
 <body>
@@ -28,22 +49,54 @@
     <nav>
       <ul>
         <li><a href="./index.html" title="Home">Home</a></li>
-        <li><a href="./introduction.html" title="Introduction">Introduction</a></li>
-        <li><a href="./contract.html" title="My Contract">Contract</a></li>
-        <li><a href="./brand.html" title="My Brand">Brand</a></li>
+        <li><a href="./introduction250.html" title="Introduction">Introduction</a></li>
+        <li><a href="./contract250.html" title="My Contract">Contract</a></li>
+        <li><a href="./brand250.html" title="My Brand">Brand</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="about">
-      <header>
-        <h2>The Brand</h2>
-      </header>
-      <p>
-        bRAND
-      </p>
+    <section id="brand-about">
+      <h2>The Brand</h2>
+      <p> About the brand content goes here.</p>
     </section>
+    
+    <section id="color-block">
+      <h1>Color Palette</h1>
+
+      <div id="palette-container">
+        <palette>
+          <color name="Payne's gray" hex="5d737e" r="93" g="115" b="126"></color>
+          <color name="Verdigris" hex="64b6ac" r="100" g="182" b="172"></color>
+          <color name="Celeste" hex="c0fdfb" r="192" g="253" b="251"></color>
+          <color name="Mint green" hex="daffef" r="218" g="255" b="239"></color>
+          <color name="Baby powder" hex="fcfffd" r="252" g="255" b="253"></color>
+        </palette>
+      </div>
+    </section>
+    
+    <script>
+      // Select custom palette and colors
+      const palette = document.querySelector("palette");
+      const colors = palette.querySelectorAll("color");
+      const container = document.getElementById("palette-container");
+  
+      colors.forEach(color => {
+        // Get attributes from <color> elements
+        const name = color.getAttribute("name");
+        const hex = color.getAttribute("hex");
+  
+        // Create a visual block
+        const block = document.createElement("div");
+        block.className = "color-block";
+        block.style.backgroundColor = `#${hex}`;
+        block.innerHTML = `<strong>${name}</strong><br>#${hex}`;
+  
+        container.appendChild(block);
+      });
+    </script>
+
   </main>
 
   <footer>
@@ -61,24 +114,8 @@
     <p>Designed by Dajabre Torain | &copy; 2024</p>
   </footer>
   
-  <!-- Coolors Palette Widget Script -->
-   <script src="https://coolors.co/palette-widget/widget.js"></script>
-   <script>
-      // Initialize the Coolors Palette Widget after the DOM is fully loaded
-      new CoolorsPaletteWidget("09812983687146817", ["5d737e", "64b6ac", "c0fdfb", "daffef", "fcfffd"], {
-        container: "#coolors-widget",
-      });
-    </script>
-
 </body>
 </html>
 
-    <palette>
-      <color name="Payne's gray" hex="5d737e" r="93" g="115" b="126" />
-      <color name="Verdigris" hex="64b6ac" r="100" g="182" b="172" />
-      <color name="Celeste" hex="c0fdfb" r="192" g="253" b="251" />
-      <color name="Mint green" hex="daffef" r="218" g="255" b="239" />
-      <color name="Baby powder" hex="fcfffd" r="252" g="255" b="253" />
-    </palette>
 
 
