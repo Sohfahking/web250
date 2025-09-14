@@ -16,31 +16,6 @@
 
   <script src="https://lint.page/kit/880bd5.js" crossorigin="anonymous"></script>
 
-  <!-- Color Palette Style -->
-  <style>
-    #palette-container {
-      display: flex;
-      justify-content: center; /* Center horizontally */
-      flex-wrap: wrap; /* Allow wrapping to next line */
-      gap: 20px; /* Space between blocks */
-    }
-
-    .color-block {
-      font-family: Calibri, sans-serif;
-      display: inline-block;
-      width: 100px;
-      height: 100px;
-      text-align: center;
-      font-size: 14px;
-      color: black;
-      margin: 10px;
-      border: 2px solid lightslategray;
-      display: flex; /* Align content within the block */
-      flex-direction: column;
-      justify-content: center; /* Center text vertically */
-      align-items: center; /* Center text horizontally */
-    }
-  </style>
 </head>
 
 <body>
@@ -56,44 +31,17 @@
   </header>
 
   <main>
-    <section id="brand-about">
       <h2>The Brand</h2>
       <p> About the brand content goes here.</p>
-    </section>
-    
-    <section id="color-block">
-      <h1>Color Palette</h1>
 
-      <div id="palette-container">
-          <color name="Payne's gray" hex="5d737e" r="93" g="115" b="126"></color>
-          <color name="Verdigris" hex="64b6ac" r="100" g="182" b="172"></color>
-          <color name="Celeste" hex="c0fdfb" r="192" g="253" b="251"></color>
-          <color name="Mint green" hex="daffef" r="218" g="255" b="239"></color>
-          <color name="Baby powder" hex="fcfffd" r="252" g="255" b="253"></color>
+ <h3>Color Palette</h3>
+    <div class="color-palette">
+      <div class="color-box" style="background-color: #5d737eff; color:#fcfffdff; border-color:#100f0f;">Payne's Gray</div>
+      <div class="color-box" style="background-color: #64b6acff; color:#fcfffdff; border-color: #100f0f;">Verdigris</div>
+      <div class="color-box" style="background-color: #c0fdfbff; color:#5d737eff; border-color:#100f0f;">Celeste</div>
+      <div class="color-box" style="background-color: #daffefff; color:#5d737eff; border-color:#100f0f;">Mint Green</div>
+      <div class="color-box" style="background-color: #fcfffdff; color:#5d737eff; border-color:#100f0f;">Baby Powder</div>
       </div>
-    </section>
-    
-    <script>
-      // Select custom palette and colors
-      const palette = document.querySelector("palette");
-      const colors = palette.querySelectorAll("color");
-      const container = document.getElementById("palette-container");
-  
-      colors.forEach((color) => {
-        // Get attributes from <color> elements
-        const name = color.getAttribute("name");
-        const hex = color.getAttribute("hex");
-  
-        // Create a visual block
-        const block = document.createElement("div");
-        block.className = "color-block";
-        block.style.backgroundColor = `#${hex}`;
-        block.innerHTML = `<strong>${name}</strong><br>#${hex}`;
-  
-        container.appendChild(block);
-      });
-    </script>
-
   </main>
 
   <footer>
