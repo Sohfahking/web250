@@ -20,7 +20,7 @@
 body {
   font-family: "Georgia", serif;
   color: var(--paynes-gray);
-  background-color: var(--baby-powder);
+  background-color: var(--mint-green);
   margin: 0;
   padding: 20px;
   line-height: 1.5;
@@ -77,14 +77,14 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  color: var(--celeste);
+  color: var(--paynes-gray);
 }
 
 /* Main Content */
 main {
   box-sizing: border-box;
   padding: 2rem;
-  background-color: var(--mint-green);
+  background-color: var(--baby-powder);
   border-radius: 10px;
   margin: 2rem auto;
   max-width: 800px;
@@ -117,7 +117,7 @@ main p {
 /* Footer */
 footer {
   background-color: var(--paynes-gray);
-  color: var(--baby-powder);
+  color: var(--mint-green);
   padding: 1rem 0;
   text-align: center;
 }
@@ -138,12 +138,12 @@ footer ul li {
 
 footer ul li a {
   text-decoration: none;
-  color: var(--mint-green);
+  color: var(--celeste);
   transition: color 0.3s ease;
 }
 
 footer ul li a:hover {
-  color: var(--celeste);
+  color: var(--verdigris);
 }
 
 /* Footer Paragraph */
