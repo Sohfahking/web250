@@ -138,7 +138,7 @@ footer ul li {
 
 footer ul li a {
   text-decoration: none;
-  color: var(--celeste);
+  color: var(--mint-green);
   transition: color 0.3s ease;
 }
 
