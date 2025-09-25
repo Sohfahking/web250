@@ -19,8 +19,7 @@
 
 body {
   font-family: "Georgia", serif;
-  color: var(--paynes-gray);
-  background-color: var(--mint-green);
+  background-color: var(--verdigris);
   margin: 0;
   padding: 20px;
   line-height: 1.5;
@@ -34,15 +33,22 @@ body {
   padding: 20px;
 }
 
-h1,
+h1
+{
+  color: var(--celeste);
+  text-align: center;
+  font-weight: bold;
+}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-  text-align: center;
+  color: var(--paynes-gray);
   font-weight: bold;
 }
+
 
 p,
 ul,
@@ -53,7 +59,7 @@ li {
 
 /* Navigation Bar */
 header nav {
-  background-color: var(--verdigris);
+  background-color: var(--mint-green);
   padding: 1rem 0;
 }
 
@@ -71,13 +77,13 @@ header nav ul li {
 
 header nav ul li a {
   text-decoration: none;
-  color: var(--baby-powder);
+  color: var(--paynes-gray);
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-  color: var(--paynes-gray);
+  color: var(--verdigris);
 }
 
 /* Main Content */
