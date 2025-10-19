@@ -50,6 +50,7 @@ li {
   margin: 0 1rem;
 }
 
+
 /* Navigation Bar */
 header nav {
   background-color: var(--mint-green);
@@ -89,6 +90,9 @@ main {
   color: var(--paynes-gray);
 }
 
+main a:visited{
+  color: var(--paynes-gray);
+}
 /* Brand color boxes */
 .color-box {
   width: 80%;
