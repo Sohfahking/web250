@@ -1,24 +1,16 @@
-/* Palette*/
-:root {
-/* CSS HEX */
---paynes-gray: #5d737eff;
---verdigris: #64b6acff;
---celeste: #c0fdfbff;
---mint-green: #daffefff;
---baby-powder: #fcfffdff;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-/* CSS HSL */
---paynes-gray-hsl: hsla(200, 15%, 43%, 1);
---verdigris-hsl: hsla(173, 36%, 55%, 1);
---celeste-hsl: hsla(178, 94%, 87%, 1);
---mint-green-hsl: hsla(154, 100%, 93%, 1);
---baby-powder-hsl: hsla(140, 100%, 99%, 1);
+:root {
+  /* Brand Colors */
+  --paynes-gray: #5d737e;
+  --verdigris: #64b6ac;
+  --mint-green: #daffef;
+  --baby-powder: #fcfffd;
 }
 
 /* Global Styles */
-
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   background-color: var(--verdigris);
   margin: 0;
@@ -26,30 +18,23 @@ body {
   line-height: 1.5;
 }
 
-h1
-{
-  color: var(--baby-powder);
+h1 {
+  background-color: var(--paynes-gray);
+  border-radius: 10px;
+  color: var(--mint-green);
   font-weight: bold;
-  -webkit-text-stroke: 1px var(--paynes-gray); /* width and color */
+  padding: 10px;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2, h3, h4, h5, h6 {
   color: var(--paynes-gray);
   font-weight: bold;
 }
 
-p,
-ul,
-li {
-  font-family: Arial, sans-serif;
+p, ul, li {
   text-align: left;
   margin: 0 1rem;
 }
-
 
 /* Navigation Bar */
 header nav {
@@ -60,50 +45,50 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: center;
-  list-style-type: none;
-  padding: 0;
+  list-style: none;
   margin: 0;
+  padding: 0;
 }
 
-header nav ul li a {
+header nav a {
   text-decoration: none;
   color: var(--paynes-gray);
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
-header nav ul li a:hover {
+header nav a:hover {
   color: var(--verdigris);
 }
 
 /* Main Content */
 main {
   box-sizing: border-box;
-  padding: 2rem;
   background-color: var(--baby-powder);
   border-radius: 10px;
-  margin: 2rem auto;
+  margin: 1rem auto 2rem;
   max-width: 800px;
+  padding: 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-top: 1rem;
   font-size: 1rem;
+  line-height: 1.6;
   color: var(--paynes-gray);
 }
 
-main a:visited{
+main a:visited {
   color: var(--paynes-gray);
 }
-/* Brand color boxes */
+
+/* Brand Color Boxes */
 .color-box {
   width: 80%;
   height: 50px;
-  text-align: center;
   margin: 5px auto;
+  text-align: center;
   font-weight: bold;
+  border: 2px solid black;
   border-radius: 5px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: black;
+  box-sizing: border-box;
 }
 
 /* Footer */
@@ -111,36 +96,32 @@ footer {
   background-color: var(--paynes-gray);
   color: var(--mint-green);
   padding: 1rem 0;
+  text-align: center;
 }
 
 footer nav ul {
-  list-style: none;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-footer nav li {
-  display: inline;
-  margin: 0 5px;
-}
-
-footer ul li a {
+footer a {
   text-decoration: none;
   color: var(--mint-green);
   transition: color 0.3s ease;
 }
 
-footer ul li a:hover {
+footer a:hover {
   color: var(--verdigris);
 }
 
 footer p {
   margin-top: 16px;
   font-size: 14px;
-  text-align: center;
   line-height: 20px;
-
+  text-align: center;
 }
