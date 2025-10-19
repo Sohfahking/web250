@@ -18,25 +18,17 @@
 /* Global Styles */
 
 body {
-  font-family: "Georgia", serif;
+  font-family: Arial, sans-serif;
+  text-align: center;
   background-color: var(--verdigris);
   margin: 0;
   padding: 20px;
   line-height: 1.5;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  /* Center the heading */
-  margin: 0;
-  padding: 20px;
-}
-
 h1
 {
-  color: var(--celeste);
-  text-align: center;
+  color: var(--baby-powder);
   font-weight: bold;
 }
 
@@ -49,10 +41,10 @@ h6 {
   font-weight: bold;
 }
 
-
 p,
 ul,
 li {
+  font-family: Arial, sans-serif;
   text-align: left;
   margin: 0 1rem;
 }
@@ -69,10 +61,6 @@ header nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-header nav ul li {
-  margin: 0 1rem;
 }
 
 header nav ul li a {
@@ -95,13 +83,6 @@ main {
   margin: 2rem auto;
   max-width: 800px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-#main-header {
-  color: var(--verdigris);
-}
-
-main p {
   margin-top: 1rem;
   font-size: 1rem;
   color: var(--paynes-gray);
@@ -125,21 +106,20 @@ footer {
   background-color: var(--paynes-gray);
   color: var(--mint-green);
   padding: 1rem 0;
-  text-align: center;
 }
 
-footer ul {
-  list-style-type: none;
+footer nav ul {
+  list-style: none;
   padding: 0;
-  margin: 0 auto;
-  display: inline-flex;
-  /* Align items in a horizontal row */
-  gap: 1rem;
-  /* Add spacing between items */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-footer ul li {
+footer nav li {
   display: inline;
+  margin: 0 5px;
 }
 
 footer ul li a {
@@ -152,12 +132,11 @@ footer ul li a:hover {
   color: var(--verdigris);
 }
 
-/* Footer Paragraph */
+
 footer p {
   margin-top: 16px;
   font-size: 14px;
   text-align: center;
-  /* Ensures the paragraph text is centered */
   line-height: 20px;
-  /* Improves readability */
+
 }
