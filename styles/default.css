@@ -30,6 +30,7 @@ h1
 {
   color: var(--baby-powder);
   font-weight: bold;
+  -webkit-text-stroke: 1px var(--paynes-gray); /* width and color */
 }
 
 h2,
